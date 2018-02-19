@@ -3,8 +3,9 @@
 
 ## Program Instructions
 Enter in Command Line
-* npm i
-* node index.js
+* npm i 
+* if polyfills error, run in command line: rm -rf node_modules && npm install (why? I have no idea but it worked)
+* npm run watch
 
 
 ## Program Issues
@@ -13,6 +14,7 @@ Enter in Command Line
 
 ## Current Program Status
 * started over with starter code, developer code pending
+* fix ./backend/lib/server.js to be relevant with lab
 
 
 ## Developer Installs
