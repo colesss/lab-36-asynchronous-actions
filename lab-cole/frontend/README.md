@@ -9,12 +9,7 @@ Enter in Command Line
 
 
 ## Program Issues
-* ...
-
-
-## Current Program Status
-* started over with starter code, developer code pending
-* fix ./backend/lib/server.js to be relevant with lab
+* dotenv issue: NODE_ENV environement variable is undefined
 
 
 ## Developer Installs

@@ -1,3 +1,3 @@
 import {combineReducers} from 'redux'
-import token from './token.js'
-export default combineReducers({token})
+import books from './library.js'
+export default combineReducers({books})

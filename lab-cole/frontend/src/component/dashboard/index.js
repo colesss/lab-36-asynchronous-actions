@@ -1,13 +1,33 @@
-import React from 'react'
+import React from 'react';
+import {connect} from 'react-redux';
 
-class Dashboard extends React.Component {
+import * as books from '../../action/library.js';
+
+import LibraryForm from '../library-form';
+import LibraryList from '../library-list';
+
+class Dashboard extends React.Component{
   render(){
-    return (
-      <div className='dashboard'>
-        <h1> hello from Dashboard </h1>
+    return(
+      <div>
+        <h1> Cole's Library </h1>
+        <LibraryForm libraryActions={this.props.libraryActions}/>
+        <br/>
+        <LibraryList books={this.props.state} libraryActions={this.props.libraryActions} />
       </div>
     )
   }
 }
 
-export default Dashboard
+const mapStateToProps = (state) => ({
+  state: state.books,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  libraryActions: {
+    addBook: book => dispatch(books.create(book)),
+    deleteBook: book => dispatch(books.destroy(book)),
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

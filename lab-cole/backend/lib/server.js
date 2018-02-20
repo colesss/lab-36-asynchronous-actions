@@ -19,7 +19,7 @@ app.use('/api', require('../route/library-router.js'));
 app.all('*', (req,res) => res.sendStatus(404));
 
 // error middleware
-app.use(require('./error.js'));
+app.use(require('./error-middleware.js'));
 
 let server = null;
 module.exports = {

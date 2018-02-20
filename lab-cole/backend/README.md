@@ -4,15 +4,8 @@
 ## Program Instructions
 Enter in Command Line
 * npm i 
+* mongod
 * node index.js
-
-
-## Program Issues
-* ...
-
-
-## Current Program Status
-* added basic backend...
 
 
 ## Developer Installs

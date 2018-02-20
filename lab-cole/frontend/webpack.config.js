@@ -12,7 +12,7 @@ const ExtractPlugin = require('extract-text-webpack-plugin');
 const production = process.env.NODE_ENV === 'production';
 
 let plugins = [
-  new HTMLPlugin({title: 'kanban'}),
+  new HTMLPlugin({title: 'library'}),
   new EnvironmentPlugin(['NODE_ENV']),
   new ExtractPlugin('bundle.[hash].css'),
   new DefinePlugin({
